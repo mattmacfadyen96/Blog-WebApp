@@ -4,7 +4,7 @@
   <% postItems.forEach(function(post) { %>
     <h1><%= post.title %></h1>
     <p></p>
-    <%= post.body.substring(0, 100) + " ..." %>
-    <a href="/posts/<%=post.title%>"> Read More</a>
+    <%= post.content.substring(0, 100) + " ..." %>
+    <a href="/posts/<%=post._id%>"> Read More</a>
   <% }) %>
 <%- include("partials/footer") -%>
